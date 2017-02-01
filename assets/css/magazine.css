@@ -4,7 +4,7 @@ body{
 
 .post-title a{
   color: #485052;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
 }
 .footer {
@@ -186,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-details a, .post-details i {
   color: #959494;
+  font-size: 18px;
 }
 .post-details a:hover, .post-details a:focus {
   color: #aabdc4;
@@ -217,6 +218,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-extras a:hover, .post-extras a:focus {
   color: #aabdc4;
+}
+
+.tagcloud li{
+  color: #394042;
+  font-size: 15px;
 }
 
 .post-tags a, .post-share ul.social-icons li a {
