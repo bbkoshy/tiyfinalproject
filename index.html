@@ -1,517 +1,631 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Reddit</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+<!doctype html>
+<html class="no-js" lang="">
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Reddit Front Page</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,400,400italic,700,900%7COswald:300,400,700%7CGentium+Basic:400,400italic&amp;subset=latin,latin,latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/extras.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/magazine.min.css">
+    <link rel="stylesheet" href="assets/css/magazine.css">
+    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico"> </head>
     <body>
-      <nav id="navigation">
-  <ul>
-    <li><a href="#">Hot</a></li>
-    <li><a href="#">Trending</a></li>
-    <li><a href="#">Controversial</a></li>
-    <li><a href="#">Top</a></li>
-    <li><a href="#">Gilded</a></li>
-    <li><a href="#">Wiki</a></li>
-  </ul>
-</nav>
 
-            <div class="tp-banner-container">
-                <div class="tp-banner" >
-                    <ul>
+      <div class="menu navbar navbar-static-top header-logo-left-menu-right oxy-mega-menu navbar-sticky" id="masthead">
+          <div class="container">
+              <div class="navbar-header"> <button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="corporate-index.html">
+                  reddit
+              </a> </div>
+              <div class="nav-container">
+                  <nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+                      <div class="menu-container">
+                          <ul class="nav navbar-nav" id="menu-main">
+                              <li class="menu-item   "> <a href="corporate-index.html">Home</a> </li>
+                              <li class="menu-item active dropdown "> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help</a>
+                                  <ul class="dropdown-menu dropdown-menu-left ">
+                                      <li class="menu-item"> <a href="corporate-about-us.html">Site Rules</a> </li>
+                                      <li class="menu-item"> <a href="corporate-services.html">FAQ</a> </li>
+                                      <li class="menu-item"> <a href="corporate-single-service.html">Reddiquette</a> </li>
+                                      <li class="menu-item"> <a href="corporate-meet-the-team.html">New to Reddit?</a> </li>
+                                      <li class="menu-item"> <a href="corporate-404.html">Contact Us</a> </li>
 
-                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                                  </ul>
+                              </li>
+                              <li class="menu-item  dropdown menu-item-object-oxy_mega_menu"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Subreddits</a>
+                                  <ul class="dropdown-menu dropdown-menu-left row">
+                                      <li class="menu-item menu-item-object-oxy_mega_columns menu-item-has-children dropdown-submenu dropdown col-md-3"> <strong>Humor</strong>
+                                          <ul class="dropdown-menu-left">
+                                              <li class="menu-item"> <a href="corporate-elements-basic-type.html">Funny</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-blockquotes.html">GIFS</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-font-icons.html">Jokes</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-columns.html">ShowerThoughts</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-jumbotron.html">Listen To This</a> </li>
+                                          </ul>
+                                      </li>
+                                      <li class="menu-item menu-item-object-oxy_mega_columns menu-item-has-children dropdown-submenu dropdown col-md-3"> <strong>Stay Informed</strong>
+                                          <ul class="dropdown-menu-left">
+                                              <li class="menu-item"> <a href="corporate-elements-accordions.html">Politics</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-tabs.html">History</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-buttons.html">Uplifting News</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-panels.html">Gadgets</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-tables.html">News</a> </li>
+                                          </ul>
+                                      </li>
+                                      <li class="menu-item menu-item-object-oxy_mega_columns menu-item-has-children dropdown-submenu dropdown col-md-3"> <strong>Misc 1</strong>
+                                          <ul class="dropdown-menu-left">
+                                              <li class="menu-item"> <a href="corporate-elements-pricing.html">Books</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-feature-font-icons.html">Earth Porn</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-features-lists.html">Iama</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-scroll-buttons.html">Mildly Interesting</a> </li>
+                                          </ul>
+                                      </li>
+                                      <li class="menu-item menu-item-object-oxy_mega_columns menu-item-has-children dropdown-submenu dropdown col-md-3"> <strong>Misc 2</strong>
+                                          <ul class="dropdown-menu-left">
+                                              <li class="menu-item"> <a href="corporate-elements-charts.html">Space</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-features-counters.html">Sports</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-countdown-timers.html">TIFU</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-pie-charts.html">Writing Prompts</a> </li>
+                                              <li class="menu-item"> <a href="corporate-elements-progress-bars.html">Philosophy</a> </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="menu-item  dropdown "> <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Profile</a>
+                                  <ul class="dropdown-menu dropdown-menu-left ">
+                                      <li class="menu-item"> <a href="corporate-portfolio-2-columns.html">Messages</a> </li>
+                                      <li class="menu-item"> <a href="corporate-portfolio-3-columns.html">Preferences</a> </li>
 
+                                  </ul>
+                              </li>
 
+                          </ul>
+                      </div>
+                      <div class="menu-sidebar">
+                          <div class="sidebar-widget widget_search" id="search-5">
+                              <div class="top-search">
+                                  <form action="corporate-index.html" method="get" name="searchform">
+                                      <div class="input-group"> <input class="form-control" name="s" placeholder="Search" type="text"> <span class="input-group-btn">
+                                          <button class="btn btn-primary" type="submit" value="Search">
+                                              <i class="fa fa-search"></i>
+                                          </button>
+                                      </span> </div>
+                                  </form>
+                                  <a class="search-trigger"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
 
-                        </li>
-                    </ul>
+    <div id="content" role="main">
+        <article>
+            <section class="section">
+                <div class="background-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="flexslider element-top-30 element-bottom-30 text-left os-animation feature-slider" data-flex-animation="slide" data-flex-controls="show" data-flex-controlsalign="center" data-flex-controlsposition="inside" data-flex-directions="show"
+                                data-flex-slideshow="true" data-flex-speed="7000" data-os-animation="fadeIn" data-os-animation-delay="0.1s" id="flexslider-392">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="figure fade-none figcaption-bottom text-left image-effect-scroll-left">
+                                            <a class="figure-image" href="magazine-post.html"> <img alt="Why I'm Proud to be the Daughter of an Immigrant" src="assets/images/magazine/immigrant.jpg">
+                                                <div class="figure-overlay">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption">
+                                                            <h3 class="figure-caption-title"><strong>Why I'm Proud to be the Daughter of an Immigrant</strong></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h5 class="figure-caption-category"><a href="magazine-blog.html">Controversial</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="figure fade-none figcaption-bottom text-left image-filter-none image-effect-scroll-left" data-os-animation="" data-os-animation-delay="s">
+                                            <a class="figure-image" href="magazine-post.html"> <img alt="Easily Mount Your Phone" src="assets/images/magazine/blog-06.jpg">
+                                                <div class="figure-overlay">
+                                                    <div class="figure-overlay-container">
+                                                        <div class="figure-caption">
+                                                            <h3 class="figure-caption-title"><strong>What's Your Favorite Pair of Headphones for Travel?</strong></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h5 class="figure-caption-category"><a href="magazine-blog.html">Trending</a></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                            <a class="figure-image" href="magazine-post.html"> <img alt="Telling Stories in 3 Dimensions: Art Today" src="assets/images/magazine/domesticviolence.jpg">
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption">
+                                            <h4 class="figure-caption-title"><strong>Russia Decriminalizes Domestic Violence</strong></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h5 class="figure-caption-category"><a href="magazine-blog.html">Rising</a></h5>
+                        </div>
+                        <div class="figure fade-none element-top-30 element-bottom-20 figcaption-bottom text-left image-filter-none image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                            <a class="figure-image" href="magazine-post.html"> <img alt="Infographic – Social Media Addiction" src="assets/images/magazine/blog-04.jpg">
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption">
+                                            <h4 class="figure-caption-title"><strong>New Meal Plan for The New Year</strong></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h5 class="figure-caption-category"><a href="magazine-blog.html">Top</a></h5>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row vertical-middle">
+                        <div class="col-md-4">
+                            <hr class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> </div>
+                        <div class="col-md-4">
+                            <h1 class="text-center element-top-20 element-bottom-20 os-animation normal" data-os-animation="fadeIn" data-os-animation-delay="0.1s">Subscribed</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class=" os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/letter.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>An Open Letter to the Reddit Community</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit News</a></h5>
+                            </div>
+                            <div class="element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feel-Good Food" src="assets/images/magazine/iOS.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Reddit for iOS: Version 2.3 Now Available!</a></h4>
+                                    <div class="post-list-date"> January 11, 2017 * 5789comments</div>
+
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/2016.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Out wth 2016, in with 2017</a></h4>
+                                    <div class="post-list-date"> December 20, 2016 * 45666 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/blog-11-150x150.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">The Sweet Lure Of Chocolate</a></h4>
+                                    <div class="post-list-date"> December 15, 2016 * 12564 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="Pairing Beans with Brewers" src="assets/images/magazine/pets.jpeg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>My Dog has really bad seperation anxiety</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Pets</a></h5>
+                            </div>
+                            <div class=" element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                              <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                  <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/blog-15-150x150.jpg"> </a>
+                                  <h4 class="post-list-title"><a href="magazine-post.html">What To Do For Your Cat</a></h4>
+                                  <div class="post-list-date"> December 28, 2016 * 45555 comments </div>
+                              </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/raccoon.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Cop escorts raccoon out of salon</a></h4>
+                                    <div class="post-list-date"> October 15, 2016 * 30899 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.9s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feed Your Skin" src="assets/images/magazine/fox.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">A foxy christmas present</a></h4>
+                                    <div class="post-list-date"> December 9, 2016 * 20003 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="Reddit Creates" src="assets/images/magazine/art.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>Austin-Based Artist showcases work at the MET</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Creates</a></h5>
+                            </div>
+                            <div class=" element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/art1.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Graffiti Artist gains notoriety for his unique creations</a></h4>
+                                    <div class="post-list-date"> December 30, 2016 * 30209 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.8s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feed Your Skin" src="assets/images/magazine/art3.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Where can i find good sculpting classes?</a></h4>
+                                    <div class="post-list-date"> December 9, 2016 * 20098 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.2s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Telling Stories in 3 Dimensions: Art Today" src="assets/images/magazine/blog-17-150x150.jpg"></a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Telling Stories in 3
+                                    Dimensions: Art Today</a></h4>
+                                    <div class="post-list-date"> November 21, 2016 * 452223 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="headernav">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "><a href="index.html"></a></div>
-                        <div class="col-lg-3 col-xs-9 col-sm-5 col-md-3 selecttopic">
-                            <div class="dropdown">
-                                <a data-toggle="dropdown" href="#" >Subreddit 2</a> <b class="caret"></b>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Subreddit 1</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-2" href="#">Subreddit 2</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-3" href="#">Subreddit 3</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 search hidden-xs hidden-sm col-md-3">
-                            <div class="wrap">
-                                <form action="#" method="post" class="form">
-                                    <div class="pull-left txt"><input type="text" class="form-control" placeholder="Search Subreddits"></div>
-                                    <div class="pull-right"></div>
-                                    <div class="clearfix"></div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
-                            <div class="stnt pull-left">
-                                <form action="03_new_topic.html" method="post" class="form">
-                                    <button class="btn btn-primary">Submit New Post/Link</button>
-                                </form>
-                            </div>
-                            <div class="env pull-left"><i class="fa fa-envelope"></i></div>
-
-                            <div class="avatar pull-left dropdown">
-                                <a data-toggle="dropdown" href="#"><img src="images/avatar.jpg" alt="" /></a> <b class="caret"></b>
-                                <div class="status green">&nbsp;</div>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Profile</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-2" href="#">Inbox</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-3" href="#">Log Out</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-4" href="04_new_account.html">Create account</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <section class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-xs-12 col-md-8">
-                            <div class="pull-left"><a href="#" class="prevnext"><i class="fa fa-angle-left"></i></a></div>
-                            <div class="pull-left">
-                            </div>
-                            <div class="pull-left"><a href="#" class="prevnext last"><i class="fa fa-angle-right"></i></a></div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8">
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar.jpg" alt="" />
-                                            <div class="status green">&nbsp;</div>
-                                        </div>
-                                        <div class="username">
-                                          <h6>bbkoshy</h6>
-                                          <h6>24 minutes ago</h6>
-                                        </div>
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">Freedom of Press?</a></h2>
-                                        <p>Four more journalists get felony charges after covering inauguration unrest</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="">
-
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar2.jpg" alt="" />
-                                            <div class="status red">&nbsp;</div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">Women's March</a></h2>
-                                        <p>10 actions for the first 100 days of Trump's presidency</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            89
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-clock-o"></i> 25 min</div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar3.jpg" alt="" />
-                                            <div class="status red">&nbsp;</div>
-                                        </div>
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">American Idol favorite</a></h2>
-                                        <p>William Hung makes a comeback with remix of Justin Timberlake's hit - Can't stop the feeling.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            456
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar4.jpg" alt="" />
-                                            <div class="status yellow">&nbsp;</div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">My dog asks for whatever he wants by placing his paw on it</a></h2>
-                                        <p>Rocky, my five year old golden retriever is so damn polite</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            78
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar.jpg" alt="" />
-                                            <div class="status green">&nbsp;</div>
-                                        </div>
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">10 Kids Unaware of Their Halloween Costume</a></h2>
-                                        <p>It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            560
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar2.jpg" alt="" />
-                                            <div class="status red">&nbsp;</div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">Who's on the line anyway?</a></h2>
-                                        <p>Am I paranoid, or is the government listening in on my calls? I'm probably just paranoid right?.......right??!!</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            89
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-
-                            <div class="post">
-                                <div class="wrap-ut pull-left">
-                                    <div class="userinfo pull-left">
-                                        <div class="avatar">
-                                            <img src="images/avatar3.jpg" alt="" />
-                                            <div class="status red">&nbsp;</div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="posttext pull-left">
-                                        <h2><a href="02_topic.html">Beyonce to run for President in 2020</a></h2>
-                                        <p>Will the queen finally grant us our wish and become a part of history?! </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="postinfo pull-left">
-                                    <div class="comments">
-                                        <div class="commentbg">
-                                            456
-                                            <div class="mark"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-
-
-                            <div class="sidebarblock">
-                                <h3>Popular Subreddits</h3>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <ul class="cats">
-                                        <li><a href="#">/r/AskReddit<span class="badge pull-right">2030</span></a></li>
-                                        <li><a href="#">/r/twoxchromosomes<span class="badge pull-right">5672</span></a></li>
-                                        <li><a href="#">/r/gonewild<span class="badge pull-right">2050</span></a></li>
-                                        <li><a href="#">/r/technology<span class="badge pull-right">3689</span></a></li>
-                                        <li><a href="#">/r/woahdude<span class="badge pull-right">4123</span></a></li>
-                                        <li><a href="#">/r/politics<span class="badge pull-right">1451</span></a></li>
-                                        <li><a href="#">/r/funny<span class="badge pull-right">500</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
-                            <div class="sidebarblock">
-                                <h3>Sponsored Poll of the Week</h3>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <p>Which game you are playing this week?</p>
-                                    <form action="#" method="post" class="form">
-                                        <table class="poll">
-                                            <tr>
-                                                <td>
-                                                    <div class="progress">
-                                                        <div class="progress-bar color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                                            Call of Duty Ghosts
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="chbox">
-                                                    <input id="opt1" type="radio" name="opt" value="1">
-                                                    <label for="opt1"></label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="progress">
-                                                        <div class="progress-bar color2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 63%">
-                                                            Titanfall
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="chbox">
-                                                    <input id="opt2" type="radio" name="opt" value="2" checked>
-                                                    <label for="opt2"></label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="progress">
-                                                        <div class="progress-bar color3" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                                                            Battlefield 4
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="chbox">
-                                                    <input id="opt3" type="radio" name="opt" value="3">
-                                                    <label for="opt3"></label>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                            <!-- -->
-                            <div class="sidebarblock">
-                                <h3>Recently Viewed Links</h3>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <a href="#">This Dock Turns Your iPhone Into a Bedside Lamp</a>
-                                </div>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <a href="#">Who Wins in the Battle for Power on the Internet?</a>
-                                </div>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <a href="#">Sony QX10: A Funky, Overpriced Lens Camera for Your Smartphone</a>
-                                </div>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <a href="#">FedEx Simplifies Shipping for Small Businesses</a>
-                                </div>
-                                <div class="divline"></div>
-                                <div class="blocktxt">
-                                    <a href="#">Loud and Brave: Saudi Women Set to Protest Driving Ban</a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-xs-12">
-                            <div class="pull-left"><a href="#" class="prevnext"><i class="fa fa-angle-left"></i></a></div>
-                            <div class="pull-left">
-                                <ul class="paginationforum">
-                                    <li class="hidden-xs"><a href="#">1</a></li>
-                                    <li class="hidden-xs"><a href="#">2</a></li>
-                                    <li class="hidden-xs"><a href="#">3</a></li>
-                                    <li class="hidden-xs"><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">6</a></li>
-                                    <li><a href="#" class="active">7</a></li>
-                                    <li><a href="#">8</a></li>
-                                    <li class="hidden-xs"><a href="#">9</a></li>
-                                    <li class="hidden-xs"><a href="#">10</a></li>
-                                    <li class="hidden-xs hidden-md"><a href="#">11</a></li>
-                                    <li class="hidden-xs hidden-md"><a href="#">12</a></li>
-                                    <li class="hidden-xs hidden-sm hidden-md"><a href="#">13</a></li>
-                                    <li><a href="#">1586</a></li>
-                                </ul>
-                            </div>
-                            <div class="pull-left"><a href="#" class="prevnext last"><i class="fa fa-angle-right"></i></a></div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </section>
-
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-1 col-xs-3 col-sm-2 logo "><a href="#"><img src="images/search.png" alt=""  /></a></div>
-                        <div class="col-lg-8 col-xs-9 col-sm-5 ">Copyrights 2014, websitename.com</div>
-                        <div class="col-lg-3 col-xs-12 col-sm-5 sociconcent">
-                            <ul class="socialicons">
-                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-cloud"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
+    </section>
+
+    <section class="section">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="figure element-top-20 element-bottom-20 image-effect-zoom-in os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        <a class="figure-image" href="magazine-index.html" target="_self"> <img alt="add advertisement" src="assets/images/magazine/bannerad.jpg"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row vertical-middle">
+                        <div class="col-md-4">
+                            <hr class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> </div>
+
+                        <div class="col-md-4">
+                            <hr class=" os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/politics.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>Bipartisan Symposium at Convention Center</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Politics</a></h5>
+                            </div>
+                            <div class="element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feel-Good Food" src="assets/images/magazine/iOS.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Reddit for iOS: Version 2.3 Now Available!</a></h4>
+                                    <div class="post-list-date"> January 11, 2017 * 5789comments</div>
+
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/2016.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Out wth 2016, in with 2017</a></h4>
+                                    <div class="post-list-date"> December 20, 2016 * 45666 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/blog-11-150x150.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">The Sweet Lure Of Chocolate</a></h4>
+                                    <div class="post-list-date"> December 15, 2016 * 12564 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="Pairing Beans with Brewers" src="assets/images/magazine/humor.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>Laughter: The Best medicine</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Humor</a></h5>
+                            </div>
+                            <div class=" element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                              <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                  <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/blog-15-150x150.jpg"> </a>
+                                  <h4 class="post-list-title"><a href="magazine-post.html">What To Do For Your Ca</a></h4>
+                                  <div class="post-list-date"> December 28, 2016 * 45555 comments </div>
+                              </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/raccoon.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Cop escorts raccoon out of salon</a></h4>
+                                    <div class="post-list-date"> October 15, 2016 * 30899 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.9s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feed Your Skin" src="assets/images/magazine/fox.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">A foxy christmas present</a></h4>
+                                    <div class="post-list-date"> December 9, 2016 * 20003 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="Reddit Reads" src="assets/images/magazine/reads.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>I freaking love neil gaiman</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Reads</a></h5>
+                            </div>
+                            <div class=" element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/art1.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Graffiti Artist gains notoriety for his unique creations</a></h4>
+                                    <div class="post-list-date"> December 30, 2016 * 30209 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.8s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feed Your Skin" src="assets/images/magazine/art3.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Where can i find good sculpting classes?</a></h4>
+                                    <div class="post-list-date"> December 9, 2016 * 20098 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.2s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Telling Stories in 3 Dimensions: Art Today" src="assets/images/magazine/blog-17-150x150.jpg"></a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Telling Stories in 3
+                                    Dimensions: Art Today</a></h4>
+                                    <div class="post-list-date"> November 21, 2016 * 452223 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row vertical-middle">
+                        <div class="col-md-4">
+                            <hr class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> </div>
+
+                        <div class="col-md-4">
+                            <hr class=" os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/crabs.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>Do crabs think we walk sideways?</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Shower Thoughts</a></h5>
+                            </div>
+                            <div class="element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feel-Good Food" src="assets/images/magazine/iOS.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Reddit for iOS: Version 2.3 Now Available!</a></h4>
+                                    <div class="post-list-date"> January 11, 2017 * 5789comments</div>
+
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/2016.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Out wth 2016, in with 2017</a></h4>
+                                    <div class="post-list-date"> December 20, 2016 * 45666 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/blog-11-150x150.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">The Sweet Lure Of Chocolate</a></h4>
+                                    <div class="post-list-date"> December 15, 2016 * 12564 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="Pairing Beans with Brewers" src="assets/images/magazine/saturn.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>Saturn Pops out from behind the moon to ask if we're all okay</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Space</a></h5>
+                            </div>
+                            <div class=" element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                              <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                  <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/blog-15-150x150.jpg"> </a>
+                                  <h4 class="post-list-title"><a href="magazine-post.html">What To Do For Your Cat</a></h4>
+                                  <div class="post-list-date"> December 28, 2016 * 45555 comments </div>
+                              </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="The Sweet Lure Of Chocolate" src="assets/images/magazine/raccoon.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Cop escorts raccoon out of salon</a></h4>
+                                    <div class="post-list-date"> October 15, 2016 * 30899 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.9s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feed Your Skin" src="assets/images/magazine/fox.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">A foxy christmas present</a></h4>
+                                    <div class="post-list-date"> December 9, 2016 * 20003 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="figure fade-none element-top-30 figcaption-bottom text-left image-filter-none image-effect-scroll-left os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                                <a class="figure-image" href="magazine-post.html"> <img alt="Reddit Creates" src="assets/images/magazine/gadgets.jpg">
+                                    <div class="figure-overlay">
+                                        <div class="figure-overlay-container">
+                                            <div class="figure-caption">
+                                                <h4 class="figure-caption-title"><strong>This phone case is also a drone designed to take selfies</strong></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h5 class="figure-caption-category"><a href="magazine-blog.html">Reddit Gadgets</a></h5>
+                            </div>
+                            <div class=" element-top-20 element-bottom-20 recent-simple-os-container post-list">
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="What To Do For Your Cat" src="assets/images/magazine/art1.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Graffiti Artist gains notoriety for his unique creations</a></h4>
+                                    <div class="post-list-date"> December 30, 2016 * 30209 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.8s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Feed Your Skin" src="assets/images/magazine/art3.jpg"> </a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Where can i find good sculpting classes?</a></h4>
+                                    <div class="post-list-date"> December 9, 2016 * 20098 comments </div>
+                                </div>
+                                <div class="recent-simple-os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.2s">
+                                    <a class="post-list-image" href="magazine-post.html"> <img alt="Telling Stories in 3 Dimensions: Art Today" src="assets/images/magazine/blog-17-150x150.jpg"></a>
+                                    <h4 class="post-list-title"><a href="magazine-post.html">Telling Stories in 3
+                                    Dimensions: Art Today</a></h4>
+                                    <div class="post-list-date"> November 21, 2016 * 452223 comments </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    </article>
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <ul>
+          <li class="title">Overview</li>
+          <li><a href="#">Feature Tour</a></li>
+          <li><a href="#">Sell Online</a></li>
+          <li><a href="#">Online Store</a></li>
+          <li><a href="#">Store Design</a></li>
+          <li><a href="#">Shopping Cart</a></li>
+          <li><a href="#">Ecommerce Hosting</a></li>
+          <li><a href="#">Marketing & SEO</a></li>
+          <li><a href="#">Mobile Commerce</a></li>
+          <li><a href="#">App Store</a></li>
+          <li><a href="#">Feature List</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <li class="title">Resources</li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Theme Store</a></li>
+          <li><a href="#">API Docs</a></li>
+          <li><a href="#">Help Counter</a></li>
+          <li><a href="#">E-Commerce Help</a></li>
+          <li><a href="#">App Store</a></li>
+          <li><a href="#">SEO Strategy</a></li>
+          <li><a href="#">Forums Help</a></li>
+          <li><a href="#">Community Outreach</a></li>
+          <li><a href="#">Store theme</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <li class="title">Favorites</li>
+          <li><a href="#">Best Practices 2015</a></li>
+          <li><a href="#">Person Development</a></li>
+          <li><a href="#">Frontend Methodology</a></li>
+          <li><a href="#">Javascript for Designers</a></li>
+          <li><a href="#">Object Orieted CSS</a></li>
+          <li><a href="#">Atomic Styles</a></li>
+          <li><a href="#">Top Style Guides</a></li>
+          <li><a href="#">Mobile Commerce</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <li class="title">Contact Us</li>
+          <li><a href="#">send us an email</a></li>
+          <li><a href="#">give us a call</a></li>
+        </ul>
+        <ul>
+          <li class="title">Social</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Google+</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </footer>
+    </div>
+    <a class="go-top go-top-square" href="javascript:void(0)"> <i class="fa fa-angle-up"></i> </a>
+    <script type="text/javascript">
+        var oxyThemeData = {
+            navbarHeight: 120,
+            navbarScrolled: 120,
+            navbarScrolledPoint: 62,
+            menuClose: 'off',
+            scrollFinishedMessage: 'No more items to load.',
+            hoverMenu:
+            {
+                hoverActive: false,
+                hoverDelay: 200,
+                hoverFadeDelay: 200
+            },
+            siteLoader: 'on'
+        };
+    </script>
+    <script src="assets/js/theme.min.js"></script>
+    <!-- load contact form js -->
+    <script src="assets/js/contact.min.js"></script>
+</body>
 
-
-
-        <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-        <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-        <script src="js/bootstrap.min.js"></script>
-
-
-
-        <script type="text/javascript">
-
-            var revapi;
-
-            jQuery(document).ready(function() {
-                "use strict";
-                revapi = jQuery('.tp-banner').revolution(
-                        {
-                            delay: 15000,
-                            startwidth: 1200,
-                            startheight: 278,
-                            hideThumbs: 10,
-                            fullWidth: "on"
-                        });
-
-            });
-
-        </script>
-    </body>
 </html>
