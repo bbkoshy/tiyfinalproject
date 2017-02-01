@@ -1,20 +1,33 @@
+body{
+  font-family: Lato, sans-serif;
+}
 
+.post-title a{
+  color: #485052;
+  font-size: 15px;
+  font-weight: 400;
+}
 .footer {
   padding: 60px 0;
   background: #fff;
-color: #737373;
+color: #394042;
   border-top: 1px solid #737373;
 }
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    color: #394042;
   }
   .social {
     color: black;
   }
+  .footer a{
+    color: #394042;
+    font-size: 15px;
+  }
   li, a {
-    color: #737373;
+    color: #394042;
     font-size: 13px;
     font-weight: 300;
     line-height: 24px;
@@ -22,7 +35,7 @@ color: #737373;
   & .title {
     margin-bottom: .5rem;
     font-size: 14px;
-    color: #ccc;
+    color: #394042;
     border-bottom: 1px solid #333;
   }
 }
@@ -188,6 +201,12 @@ h1, h2, h3, h4, h5, h6 {
 .post-body {
   font-size: 16px;
   font-weight: 400;
+}
+
+.post-more-link{
+  color: #394042;
+  font-size: 15px;
+
 }
 
 .post-extras {
@@ -380,6 +399,15 @@ input[type="color"],
 }
   .background-overlay #content{
     background-color: #90a0a5;
+  }
+
+  .sidebar-widget a{
+    color: #485052;
+    font-size: 14px;
+  }
+
+  .sidebar-widget a{
+    color: #485052;
   }
 
   .transparent-header #content {
@@ -1285,7 +1313,9 @@ input[type="button"] {
 }
 
 .menu .nav > li > a {
-  color: #4c4c4c;
+  color: #394042;
+  font-size: 18px;
+
 }
 .menu .nav > li > a:hover, .menu .nav > li > a:focus {
   color: #aabdc4;
