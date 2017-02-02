@@ -1079,6 +1079,9 @@ pre {
   background: #aabdc4;
   color: #ffffff;
 }
+.btn-group1 .dropdown-menu{
+  margin-left: 700px;
+}
 
 .btn-primary, button, input[type="submit"] {
   background-color: #aabdc4;
@@ -2065,6 +2068,10 @@ input[type="button"] {
   background-color: #aabdc4;
 }
 
+.col-md-12 h2{
+  color: #394042;
+
+
 #infscr-loading {
   background: #aabdc4;
   color: #ffffff;
@@ -2483,9 +2490,19 @@ input[type="button"] {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.footer .container{
+  padding: 20px 0;
+  margin-top: 90px;
+    background: #fff;
+    color: #394042;
+    border-top: 1px solid #737373;
+}
+
+
 #footer {
   background-color: #505c60;
   color: rgba(255, 255, 255, 0.6);
+
 }
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong {
   color: #ffffff;
